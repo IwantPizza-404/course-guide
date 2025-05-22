@@ -1,0 +1,72 @@
+@import url('../variables.css');
+
+/* Tabs Navigation */
+.tabs-container {
+    display: flex;
+    /* overflow: hidden; */
+    background: var(--bg-primary);
+}
+
+.tabs-navigation {
+    background: var(--bg-secondary);
+}
+.tabs-navigation-list {
+    display: flex;
+    flex-direction: column;
+    min-width: 245px;
+    max-width: 245px;
+}
+
+.tab-button {
+    padding: 16px 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: var(--font-primary);
+    position: relative;
+}
+.tab-button:hover {
+    background: #F2F2F2;
+}
+
+.tab-button.active {
+    background: var(--bg-primary);
+    font-weight: 700;
+}
+
+/* Tab Content */
+.tabs-content {
+    width: 100%;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Courses Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 16px 30px;
+}
+.course-link:hover {
+    background: #F2F2F2;
+}
+
+.course-link span {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}

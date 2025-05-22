@@ -1,0 +1,99 @@
+@import url(../variables.css);
+
+.schools-slider-wrapp {
+    position: relative;
+}
+
+/* Swiper Container */
+.schools-slider.swiper {
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* Swiper Slides */
+.schools-slider .swiper-slide {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 26px rgba(203, 203, 203, 0.25);
+    border-radius: 5px;
+    min-height: 220px;
+}
+
+.schools-slider .swiper-slide img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Navigation Buttons */
+.schools-slider-wrapp .swiper-button-prev,
+.schools-slider-wrapp .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.schools-slider-wrapp .swiper-button-disabled {
+    opacity: 0.65 !important;
+}
+
+.schools-slider-wrapp .swiper-button-prev {
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.schools-slider-wrapp .swiper-button-next {
+    right: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.schools-slider-wrapp .swiper-button-prev:hover,
+.schools-slider-wrapp .swiper-button-next:hover {
+    background-color: var(--primary-color);
+}
+
+/* Navigation Arrows */
+.schools-slider-wrapp .swiper-button-prev:after,
+.schools-slider-wrapp .swiper-button-next:after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Pagination */
+.schools-slider .swiper-pagination {
+    position: static;
+    margin-top: 35px;
+}
+
+.schools-slider .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background-color: #D7D7D7;
+    opacity: 1;
+}
+
+.schools-slider .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .schools-slider .swiper-button-prev,
+    .schools-slider .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .schools-slider .swiper-button-prev:after,
+    .schools-slider .swiper-button-next:after {
+        font-size: 16px;
+    }
+} 

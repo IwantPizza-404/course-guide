@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агрегатор онлайн-курсов</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/components/courses.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapp">
+                <div class="header-nav">
+                    <div class="logo">
+                        <a href="index.html">Logo</a>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#" class="nav_link active">Курсы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Школы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Отзывы о школах</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Акции школ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <div class="transfer-btn">
+                        <div class="transfer-btn_icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_833)">
+                                    <path d="M27.7071 10.2929L20.7069 3.29273C20.3163 2.90225 19.6832 2.90237 19.2927 3.29296C19.1052 3.48047 18.9999 3.73465 18.9999 3.99979V6.99984H11.9997C11.4474 6.99984 10.9997 7.44756 10.9997 7.99988C10.9997 8.55219 11.4474 8.99991 11.9997 8.99991H19.9999C20.5522 8.99991 21 8.55219 21 7.99988V6.41378L25.586 10.9999L21 15.586V13.9999C21 13.4476 20.5522 12.9999 19.9999 12.9999H8.99969V9.99983C8.99957 9.44752 8.55173 8.99991 7.99948 9.00003C7.73439 9.00009 7.48015 9.10538 7.29265 9.29283L0.292568 16.293C-0.0978483 16.6835 -0.0978483 17.3165 0.292568 17.707L7.29271 24.7071C7.48021 24.8947 7.73451 25.0001 7.99971 25.0001C8.13114 25.0005 8.26139 24.9747 8.38269 24.9241C8.75629 24.7692 8.99981 24.4046 8.99969 24.0001V21H15.9998C16.5521 21 16.9999 20.5523 16.9999 20C16.9999 19.4477 16.5521 19 15.9998 19H7.99971C7.4474 19 6.99967 19.4477 6.99967 20V21.5861L2.41358 17L6.99967 12.4139V13.9999C6.99967 14.5522 7.4474 14.9999 7.99971 14.9999H18.9999V18C19 18.5523 19.4478 18.9999 20.0001 18.9998C20.2652 18.9997 20.5194 18.8944 20.7069 18.707L27.7071 11.7069C28.0974 11.3163 28.0974 10.6833 27.7071 10.2929Z" fill="#2B2B2B"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_833">
+                                        <rect width="28" height="28" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="icon-indicator">3</span>
+                        </div>
+                    </div>
+                    <div class="search-input">
+                        <label for="search-field" class="search-input-label">
+                            <div class="search-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_326)">
+                                        <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.8477 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.8477 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.8477 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#B5B5B5"/>
+                                        <path d="M19.7616 18.6122L15.1003 13.951C14.7827 13.6333 14.2683 13.6333 13.9507 13.951C13.6331 14.2683 13.6331 14.7832 13.9507 15.1006L18.6119 19.7618C18.7707 19.9206 18.9786 20 19.1868 20C19.3946 20 19.6027 19.9206 19.7616 19.7618C20.0792 19.4445 20.0792 18.9296 19.7616 18.6122Z" fill="#B5B5B5"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_326">
+                                            <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <input type="text" name="search" id="search-field" class="search_input" placeholder="Искать курсы">
+                        </label>
+                    </div>
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3751)">
+                                <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.8477 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.8477 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.8477 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#2B2B2B"/>
+                                <path d="M19.7615 18.6122L15.1002 13.951C14.7826 13.6333 14.2682 13.6333 13.9506 13.951C13.633 14.2683 13.633 14.7832 13.9506 15.1006L18.6119 19.7618C18.7707 19.9206 18.9786 20 19.1867 20C19.3945 20 19.6027 19.9206 19.7615 19.7618C20.0791 19.4445 20.0791 18.9296 19.7615 18.6122Z" fill="#2B2B2B"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_3751">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                            
+                    </button>
+                    <button class="burger-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2.38411H0V4.37086H20V2.38411Z" fill="#2B2B2B"/>
+                            <path d="M20 15.6291H0V17.6159H20V15.6291Z" fill="#2B2B2B"/>
+                            <path d="M20 9.00662H0V10.9934H20V9.00662Z" fill="#2B2B2B"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-close"></div>
+        <ul class="mobile-nav-links">
+            <li>
+                <a href="#" class="nav_link active">Курсы</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Школы</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Отзывы о школах</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Акции школ</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Блог</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Mobile Menu -->
+    <main>
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html" class="breadcrumb-item">Главная</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-item current">Онлайн-курсы</span>
+            </div>
+
+            <h1 class="catalog-title">Онлайн-курсы</h1>
+            <p class="catalog-description">
+                Сервис поиска онлайн-курсов сферы digital от ведущих и небольших организаций рынка с 2021 года. Мы добавляем тысячи курсов в следующие фильтры: суперпрофессии, суморазделы и поиск. Мы обновляем информацию в базе данных каждую неделю.
+            </p>
+
+            <div class="catalog-categories">
+                <!-- Category tabs will be generated dynamically based on course-categories.js -->
+            </div>
+
+            <div class="catalog-results">
+                <div class="catalog-results-header">
+                    <div class="found-courses">Найдено 0 курсов</div>
+                    <div class="filters-menu-btn">
+                        Фильтры
+                        <div class="filters-menu-btn_icon">
+                            <img src="assets/icons/refresh.svg">
+                        </div>
+                    </div>
+                    <div class="catalog-sorting">
+                        <div class="sort-item">
+                            <span>Курс</span>
+                            <div class="sort-arrow">
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_901)">
+                                    <path d="M5.71032 6.35614H0.289169C0.032632 6.35614 -0.0980563 6.66592 0.0858755 6.84986L2.79645 9.56045C2.90778 9.67178 3.09171 9.67178 3.20308 9.56045L5.91366 6.84986C6.09754 6.66592 5.96685 6.35614 5.71032 6.35614Z" fill="currentColor"/>
+                                </g>
+                                <g clip-path="url(#clip1_1_901)">
+                                <path d="M5.71032 4.64386H0.289169C0.032632 4.64386 -0.0980563 4.33408 0.0858755 4.15014L2.79645 1.43955C2.90778 1.32822 3.09171 1.32822 3.20308 1.43955L5.91366 4.15014C6.09754 4.33408 5.96685 4.64386 5.71032 4.64386Z" fill="currentColor"/>
+                                </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_901">
+                                            <rect width="6" height="6" fill="white" transform="translate(0 5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_1_901">
+                                            <rect width="6" height="6" fill="white" transform="matrix(1 0 0 -1 0 6)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="sort-item">
+                            <span>Школа</span>
+                            <div class="sort-arrow">
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_901)">
+                                        <path d="M5.71032 6.35614H0.289169C0.032632 6.35614 -0.0980563 6.66592 0.0858755 6.84986L2.79645 9.56045C2.90778 9.67178 3.09171 9.67178 3.20308 9.56045L5.91366 6.84986C6.09754 6.66592 5.96685 6.35614 5.71032 6.35614Z" fill="currentColor"/>
+                                    </g>
+                                    <g clip-path="url(#clip1_1_901)">
+                                    <path d="M5.71032 4.64386H0.289169C0.032632 4.64386 -0.0980563 4.33408 0.0858755 4.15014L2.79645 1.43955C2.90778 1.32822 3.09171 1.32822 3.20308 1.43955L5.91366 4.15014C6.09754 4.33408 5.96685 4.64386 5.71032 4.64386Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_901">
+                                            <rect width="6" height="6" fill="white" transform="translate(0 5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_1_901">
+                                            <rect width="6" height="6" fill="white" transform="matrix(1 0 0 -1 0 6)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="sort-item">
+                            <span>Цена</span>
+                            <div class="sort-arrow">
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_901)">
+                                    <path d="M5.71032 6.35614H0.289169C0.032632 6.35614 -0.0980563 6.66592 0.0858755 6.84986L2.79645 9.56045C2.90778 9.67178 3.09171 9.67178 3.20308 9.56045L5.91366 6.84986C6.09754 6.66592 5.96685 6.35614 5.71032 6.35614Z" fill="currentColor"/>
+                                </g>
+                                <g clip-path="url(#clip1_1_901)">
+                                <path d="M5.71032 4.64386H0.289169C0.032632 4.64386 -0.0980563 4.33408 0.0858755 4.15014L2.79645 1.43955C2.90778 1.32822 3.09171 1.32822 3.20308 1.43955L5.91366 4.15014C6.09754 4.33408 5.96685 4.64386 5.71032 4.64386Z" fill="currentColor"/>
+                                </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_901">
+                                            <rect width="6" height="6" fill="white" transform="translate(0 5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_1_901">
+                                            <rect width="6" height="6" fill="white" transform="matrix(1 0 0 -1 0 6)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="sort-item">
+                            <span>Длительность</span>
+                            <div class="sort-arrow">
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_901)">
+                                    <path d="M5.71032 6.35614H0.289169C0.032632 6.35614 -0.0980563 6.66592 0.0858755 6.84986L2.79645 9.56045C2.90778 9.67178 3.09171 9.67178 3.20308 9.56045L5.91366 6.84986C6.09754 6.66592 5.96685 6.35614 5.71032 6.35614Z" fill="currentColor"/>
+                                </g>
+                                <g clip-path="url(#clip1_1_901)">
+                                <path d="M5.71032 4.64386H0.289169C0.032632 4.64386 -0.0980563 4.33408 0.0858755 4.15014L2.79645 1.43955C2.90778 1.32822 3.09171 1.32822 3.20308 1.43955L5.91366 4.15014C6.09754 4.33408 5.96685 4.64386 5.71032 4.64386Z" fill="currentColor"/>
+                                </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_901">
+                                            <rect width="6" height="6" fill="white" transform="translate(0 5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_1_901">
+                                            <rect width="6" height="6" fill="white" transform="matrix(1 0 0 -1 0 6)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="sort-item">
+                            <span>Особенности</span>
+                            <div class="sort-arrow">
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_901)">
+                                    <path d="M5.71032 6.35614H0.289169C0.032632 6.35614 -0.0980563 6.66592 0.0858755 6.84986L2.79645 9.56045C2.90778 9.67178 3.09171 9.67178 3.20308 9.56045L5.91366 6.84986C6.09754 6.66592 5.96685 6.35614 5.71032 6.35614Z" fill="currentColor"/>
+                                </g>
+                                <g clip-path="url(#clip1_1_901)">
+                                <path d="M5.71032 4.64386H0.289169C0.032632 4.64386 -0.0980563 4.33408 0.0858755 4.15014L2.79645 1.43955C2.90778 1.32822 3.09171 1.32822 3.20308 1.43955L5.91366 4.15014C6.09754 4.33408 5.96685 4.64386 5.71032 4.64386Z" fill="currentColor"/>
+                                </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_901">
+                                            <rect width="6" height="6" fill="white" transform="translate(0 5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_1_901">
+                                            <rect width="6" height="6" fill="white" transform="matrix(1 0 0 -1 0 6)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                        </div>
+                        <div class="sort-item">
+                            <span>Скидка на курс</span>
+                            <div class="sort-arrow">
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_901)">
+                                    <path d="M5.71032 6.35614H0.289169C0.032632 6.35614 -0.0980563 6.66592 0.0858755 6.84986L2.79645 9.56045C2.90778 9.67178 3.09171 9.67178 3.20308 9.56045L5.91366 6.84986C6.09754 6.66592 5.96685 6.35614 5.71032 6.35614Z" fill="currentColor"/>
+                                </g>
+                                <g clip-path="url(#clip1_1_901)">
+                                <path d="M5.71032 4.64386H0.289169C0.032632 4.64386 -0.0980563 4.33408 0.0858755 4.15014L2.79645 1.43955C2.90778 1.32822 3.09171 1.32822 3.20308 1.43955L5.91366 4.15014C6.09754 4.33408 5.96685 4.64386 5.71032 4.64386Z" fill="currentColor"/>
+                                </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_901">
+                                            <rect width="6" height="6" fill="white" transform="translate(0 5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_1_901">
+                                            <rect width="6" height="6" fill="white" transform="matrix(1 0 0 -1 0 6)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-layout">
+                    <div class="catalog-sidebar">
+                        <div class="catalog-filters">
+                            <div class="filters-header">
+                                <h3>Фильтры</h3>
+                                <div class="filters-header-actions">
+                                    <button class="reset-filters">
+                                        <img src="assets/icons/refresh.svg">
+                                    </button>
+                                    <div class="filters-close"></div>
+                                </div>
+                            </div>
+                            <div class="filters-main">
+                                <div class="filter-section">
+                                    <h4 class="filter-title">Цена</h4>
+                                    <div class="price-options">
+                                        <label class="radio-label">
+                                            <input type="radio" name="price" value="all" checked>
+                                            <span class="radio-text">Платные</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="price" value="free">
+                                            <span class="radio-text">Бесплатные</span>
+                                        </label>
+                                    </div>
+                                    <div class="price-range">
+                                        <div class="price-slider">
+                                            <div class="slider-track"></div>
+                                            <div class="slider-handle left"></div>
+                                            <div class="slider-handle right"></div>
+                                        </div>
+                                        <div class="price-inputs">
+                                            <input type="text" class="price-min" value="0">
+                                            <span class="price-divider"></span>
+                                            <input type="text" class="price-max" value="175000">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="filter-section">
+                                    <h4 class="filter-title">Школы</h4>
+                                    <div class="school-options">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="school" value="skillbox">
+                                            <span class="checkbox-text">Skillbox</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="school" value="geekbrains">
+                                            <span class="checkbox-text">GeekBrains</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="school" value="netology">
+                                            <span class="checkbox-text">Нетология</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="school" value="skillfactory">
+                                            <span class="checkbox-text">Skillfactory</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="school" value="convertmonster">
+                                            <span class="checkbox-text">ConvertMonster</span>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="filter-section">
+                                    <h4 class="filter-title">Уровень сложности</h4>
+                                    <div class="level-options">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="level" value="beginner">
+                                            <span class="checkbox-text">Начальный</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="level" value="intermediate">
+                                            <span class="checkbox-text">Средний</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="level" value="professional">
+                                            <span class="checkbox-text">Профессиональный</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="level" value="children">
+                                            <span class="checkbox-text">Для детей</span>
+                                        </label>
+                                    </div>
+                                </div>
+        
+                                <div class="filter-section">
+                                    <h4 class="filter-title">Длительность(месяцев)</h4>
+                                    <div class="duration-range">
+                                        <div class="duration-slider">
+                                            <div class="slider-track"></div>
+                                            <div class="slider-handle left"></div>
+                                            <div class="slider-handle right"></div>
+                                        </div>
+                                        <div class="duration-inputs">
+                                            <input type="text" class="duration-min" value="0">
+                                            <span class="duration-divider"></span>
+                                            <input type="text" class="duration-max" value="24">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="filter-section">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="internship" value="true">
+                                        <span class="checkbox-text">
+                                            <h4 class="filter-title">Возможность стажировки</h4>
+                                        </span>
+                                    </label>
+                                </div>
+        
+                                <div class="filter-section">
+                                    
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="certificate" value="true">
+                                        <span class="checkbox-text">
+                                            <h4 class="filter-title">Возможность получить сертификат</h4>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-content">
+                        <div class="catalog-courses">
+                            <!-- Additional course cards would be added here -->
+                        </div>
+                        <div class="pagination">
+                            <a href="#" class="page-item active">1</a>
+                            <a href="#" class="page-item">2</a>
+                            <a href="#" class="page-item">3</a>
+                            <a href="#" class="page-item">4</a>
+                            <a href="#" class="page-item">5</a>
+                        </div>
+        
+                        <div class="category-links">
+                            <h2>Другие категории курсов по направлению программирование</h2>
+                            <div class="category-grid">
+                                <div class="category-column">
+                                    <a href="#">Python-разработка</a>
+                                    <a href="#">Frontend-разработка</a>
+                                    <a href="#">Мобильная разработка</a>
+                                    <a href="#">JavaScript разработка</a>
+                                    <a href="#">Java разработка</a>
+                                    <a href="#">Системное администрирование</a>
+                                    <a href="#">Кибербезопасность</a>
+                                    <a href="#">Управление разработкой ПО</a>
+                                </div>
+                                <div class="category-column">
+                                    <a href="#">Android-разработка</a>
+                                    <a href="#">Верстка сайтов на HTML/CSS</a>
+                                    <a href="#">Разработка на C#</a>
+                                    <a href="#">PHP-разработка</a>
+                                    <a href="#">DevOps</a>
+                                    <a href="#">iOS разработка</a>
+                                    <a href="#">React разработка</a>
+                                    <a href="#">Тестирование</a>
+                                </div>
+                                <div class="category-column">
+                                    <a href="#">Разработка игр на Unreal Engine</a>
+                                    <a href="#">Разработка на Node.js</a>
+                                    <a href="#">Разработка на Kotlin</a>
+                                    <a href="#">Информационная безопасность</a>
+                                    <a href="#">Go разработка</a>
+                                    <a href="#">Разработка на Swift</a>
+                                    <a href="#">Фреймворк Spring</a>
+                                    <a href="#">VHDL разработка</a>
+                                </div>
+                                <div class="category-column">
+                                    <a href="#">Фреймворк Laravel</a>
+                                    <a href="#">Фреймворк Flutter</a>
+                                    <a href="#">Работа с Git</a>
+                                    <a href="#">Разработка на Ruby</a>
+                                    <a href="#">Разработка на C++</a>
+                                    <a href="#">Фреймворк Django</a>
+                                    <a href="#">1С разработка</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="school-section">
+                            <h2>Онлайн-школы преподающие программирование</h2>
+                            <div class="school-grid">
+                                <div class="school-item">
+                                    <div class="school-item-content">
+                                        <div class="school-info">
+                                            <div class="school-name">Skillbox</div>
+                                            <div class="school-rating">
+                                                <div class="star-icon">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1_1474)">
+                                                            <path d="M6.6142 0.561591C6.68669 0.414743 6.83624 0.321777 7.00001 0.321777C7.16379 0.321749 7.31336 0.414715 7.38585 0.561562L9.06403 3.96141C9.22184 4.2811 9.52684 4.50273 9.87967 4.55397L13.6318 5.09941C13.7939 5.12299 13.9285 5.23649 13.9792 5.39225C14.0297 5.54799 13.9876 5.71898 13.8703 5.83331L11.1554 8.48C10.9001 8.72891 10.7837 9.08745 10.8439 9.4388L11.4845 13.1752C11.5121 13.3367 11.4458 13.4998 11.3133 13.596C11.1808 13.6923 11.0051 13.7049 10.8602 13.6287L7.50412 11.8647C7.18856 11.6988 6.81155 11.6988 6.49593 11.8647L3.14016 13.6287C2.99519 13.7049 2.81954 13.6921 2.68707 13.5959C2.55456 13.4996 2.48824 13.3365 2.51591 13.1751L3.15678 9.43897C3.21708 9.0875 3.10057 8.72891 2.84522 8.47995L0.130186 5.83334C0.0129349 5.71901 -0.0293016 5.54802 0.021314 5.39228C0.0719295 5.23654 0.206564 5.12304 0.368636 5.09944L4.12066 4.55403C4.47349 4.50273 4.77852 4.28113 4.93633 3.96138L6.6142 0.561591Z" fill="#FFB800"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1_1474">
+                                                                <rect width="14" height="14" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>                                                        
+                                                </div>
+                                                4.5
+                                            </div>
+                                            <div class="school-reviews">Отзывы о школе 58</div>
+                                        </div>
+                                        <div class="school-info">
+                                            <div class="school-name">Skillbox (Скилбокс)</div>
+                                            <div class="school-courses">178 курсов по 48 темам</div>
+                                            <div class="school-categories-container">
+                                                <div class="school-category">Программирование</div>
+                                                <div class="school-category">Дизайн</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-school-details">Подробнее</a>
+                                </div>
+                                <div class="school-item">
+                                    <div class="school-item-content">
+                                        <div class="school-info">
+                                            <div class="school-name">Skillbox</div>
+                                            <div class="school-rating">
+                                                <div class="star-icon">
+                                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1_1474)">
+                                                            <path d="M6.6142 0.561591C6.68669 0.414743 6.83624 0.321777 7.00001 0.321777C7.16379 0.321749 7.31336 0.414715 7.38585 0.561562L9.06403 3.96141C9.22184 4.2811 9.52684 4.50273 9.87967 4.55397L13.6318 5.09941C13.7939 5.12299 13.9285 5.23649 13.9792 5.39225C14.0297 5.54799 13.9876 5.71898 13.8703 5.83331L11.1554 8.48C10.9001 8.72891 10.7837 9.08745 10.8439 9.4388L11.4845 13.1752C11.5121 13.3367 11.4458 13.4998 11.3133 13.596C11.1808 13.6923 11.0051 13.7049 10.8602 13.6287L7.50412 11.8647C7.18856 11.6988 6.81155 11.6988 6.49593 11.8647L3.14016 13.6287C2.99519 13.7049 2.81954 13.6921 2.68707 13.5959C2.55456 13.4996 2.48824 13.3365 2.51591 13.1751L3.15678 9.43897C3.21708 9.0875 3.10057 8.72891 2.84522 8.47995L0.130186 5.83334C0.0129349 5.71901 -0.0293016 5.54802 0.021314 5.39228C0.0719295 5.23654 0.206564 5.12304 0.368636 5.09944L4.12066 4.55403C4.47349 4.50273 4.77852 4.28113 4.93633 3.96138L6.6142 0.561591Z" fill="#FFB800"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1_1474">
+                                                                <rect width="14" height="14" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>   
+                                                </div>
+                                                4.5
+                                            </div>
+                                            <div class="school-reviews">Отзывы о школе 58</div>
+                                        </div>
+                                        <div class="school-info">
+                                            <div class="school-name">Skillbox (Скилбокс)</div>
+                                            <div class="school-courses">178 курсов по 48 темам</div>
+                                            <div class="school-categories-container">
+                                                <div class="school-category">Программирование</div>
+                                                <div class="school-category">Дизайн</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn-school-details">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="/">LOGO</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/vk.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/telegram.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/instagram.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/youtube.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/facebook.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3 class="footer-title">КАТЕГОРИИ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Программирование</a></li>
+                            <li><a href="#">Маркетинг</a></li>
+                            <li><a href="#">Дизайн</a></li>
+                            <li><a href="#">Управление</a></li>
+                            <li><a href="#">Контент-маркетинг</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">ШКОЛЫ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Skillbox</a></li>
+                            <li><a href="#">Geekbrains</a></li>
+                            <li><a href="#">Нетология</a></li>
+                            <li><a href="#">Skillfactory</a></li>
+                            <li><a href="#">Convertmonster</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">ОТЗЫВЫ О ШКОЛАХ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Отзывы о Skillbox</a></li>
+                            <li><a href="#">Отзывы о Geekbrains</a></li>
+                            <li><a href="#">Отзывы о Нетология</a></li>
+                            <li><a href="#">Отзывы о Skillfactory</a></li>
+                            <li><a href="#">Отзывы о Convertmonster</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">КУРСЫ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">С дипломом</a></li>
+                            <li><a href="#">С трудоустройством</a></li>
+                            <li><a href="#">Платные</a></li>
+                            <li><a href="#">Бесплатные</a></li>
+                            <li><a href="#">Ближайшие по дате старта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">УРОВЕНЬ СЛОЖНОСТИ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Начальный</a></li>
+                            <li><a href="#">Средний</a></li>
+                            <li><a href="#">Профессиональный</a></li>
+                            <li><a href="#">Для детей</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom_wrapp">
+                    <div class="footer-bottom-col">
+                        <div class="footer-logo">
+                            <a href="/">LOGO</a>
+                        </div>
+                        <div class="footer-copyright">
+                            © 2021. Logo. Все права защищены
+                        </div>
+                    </div>
+                    <div class="footer-bottom-col">
+                        <div class="footer-socials">
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/vk.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/telegram.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/instagram.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/youtube.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/facebook.svg">
+                            </a>
+                        </div>
+                        <div class="footer-policy">
+                            <a href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/components/course-categories.js"></script>
+    <script src="js/components/catalog.js"></script>
+</body>
+</html> 

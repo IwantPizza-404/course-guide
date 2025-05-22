@@ -1,0 +1,916 @@
+/* Popular Courses Section */
+.popular-courses {
+    padding: 32px 0;
+}
+.popular-courses_wrapp{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+/* Course Categories */
+.course-categories {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.category-btn {
+    padding: 12px 24px;
+    font-family: var(--font-primary);
+    background: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 25px;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background: var(--bg-secondary);
+}
+
+.category-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Course List */
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Course Card */
+.course-card {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 9px 15px #e2e2e239;
+    border-radius: 5px;
+    padding: 21px 38px;
+    align-items: center;
+}
+
+/* Course Info */
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-title {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+}
+
+.school-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.school-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rating {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.star {
+    color: #FFD700;
+}
+
+.reviews {
+    font-size: 12px;
+    color: #B5B5B5;
+}
+
+/* Course Price */
+.course-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #B5B5B5;
+    font-size: 14px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.monthly-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00C213;
+}
+
+/* Course Details */
+.course-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 85px;
+}
+
+.detail-icon {
+    display: flex;
+}
+
+/* Course Features */
+.course-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.course-features .feature-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 18px;
+}
+
+.feature-icon {
+    display: flex;
+    width: 12px;
+}
+
+/* Course Actions */
+.course-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn {
+    padding: 10px 15px;
+    height: 36px;
+    border-radius: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-secondary {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.btn-compare {
+    background: none;
+    border: none;
+    color: #8C8C8C;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    height: 24px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.compare-icon {
+    display: flex;
+    width: 12px;
+}
+
+/* Show More Button */
+.show-more {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-show-more {
+    padding: 12px 42px;
+    height: 50px;
+    background: none;
+    border: 1px solid #D7D7D7;
+    color: var(--text-light-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-show-more:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    /* .course-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .course-info {
+        grid-column: 1 / 3;
+    }
+    
+    .course-actions {
+        grid-column: 1 / 3;
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    .course-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-info,
+    .course-actions {
+        grid-column: 1;
+    }
+    
+    .course-actions {
+        flex-direction: column;
+    }
+}
+
+
+/* Course Catalog Styles */
+
+/* Breadcrumbs styles */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.breadcrumb-item {
+    color: #868686;
+}
+
+.breadcrumb-item.current {
+    color: #2B2B2B;
+}
+
+.breadcrumb-separator {
+    margin: 0 10px;
+    color: #868686;
+}
+
+a.breadcrumb-item:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Catalog Title and Description */
+.catalog-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2B2B2B;
+}
+
+.catalog-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2B2B2B;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+/* Category Tabs */
+.catalog-categories {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 15px 0;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #F0F0F0;
+    margin-bottom: 43px;
+}
+
+.category-tab {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 8px 16px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.category-tab:hover {
+    background-color: var(--bg-secondary);
+}
+
+.category-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Catalog Results Header */
+.catalog-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.found-courses {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.catalog-sorting {
+    display: grid;
+    width: calc(100% - 259px);
+    padding: 0 30px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.filters-menu-btn{
+    display: none;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 1px solid #D7D7D7;
+    cursor: pointer;
+    padding: 12px 26px;
+    height: 46px;
+    background-color: white;
+}
+.filters-menu-btn_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #868686;
+    cursor: pointer;
+}
+
+.sort-arrow{
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.sort-arrow.active {
+    color: var(--primary-color);
+}
+
+.sort-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Catalog Layout */
+.catalog-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 19px;
+    margin-bottom: 40px;
+}
+
+/* Filters Sidebar */
+.catalog-filters {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filters-header h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+.filters-main{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 16px 24px;
+}
+
+.reset-filters {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.filter-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Radio and Checkbox styles */
+.radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.checkbox-label{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.radio-text, .checkbox-text {
+    font-size: 12px;
+    font-family: var(--font-primary);
+}
+
+/* Price Range Slider */
+.price-range, .duration-range {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-slider, .duration-slider {
+    position: relative;
+    height: 2px;
+    background-color: #C9C9C9;
+    margin: 0 15px 24px 0;
+}
+
+.slider-track {
+    position: absolute;
+    height: 100%;
+    background-color: var(--primary-color);
+    left: 0;
+    right: 70%;
+}
+
+.slider-handle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.slider-handle.left {
+    left: 0%;
+}
+
+.slider-handle.right {
+    right: 70%;
+}
+
+.price-inputs, .duration-inputs {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 24px;
+}
+
+.price-min, .price-max, .duration-min, .duration-max {
+    width: 100%;
+    padding: 6px;
+    height: 24px;
+    font-size: 12px;
+    font-family: var(--font-primary);
+    background: #F0F0F0;
+    text-align: center;
+}
+
+.price-divider, .duration-divider {
+    height: 1px;
+    width: 15px;
+    flex-shrink: 0;
+    background: #CBCBCB;
+}
+
+/* Course Cards */
+.catalog-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 850px;
+}
+.catalog-courses .course-card{
+    padding: 14px 23px 14px 30px;
+    gap: 12px;
+}
+
+.catalog-content{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    gap: 5px;
+    margin: 43px 0 78px 0;
+}
+
+.page-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    color: #2B2B2B;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.page-item:hover {
+    background-color: #F5F5F5;
+}
+
+.page-item.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Category Links */
+.category-links {
+    margin-bottom: 72px;
+}
+
+.category-links h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 30px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.category-column a {
+    color: #2B2B2B;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.category-column a:hover {
+    color: var(--primary-color);
+}
+
+/* School Section */
+.school-section {
+    margin-bottom: 60px;
+}
+
+.school-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2B2B2B;
+    margin-bottom: 30px;
+}
+
+.school-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.school-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #F0F0F0;
+    padding-right: 30px;
+    min-height: 135px;
+}
+
+.school-item-content{
+    display: flex;
+    align-items: center;
+}
+
+.school-item .school-info {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 38px 22px 38px;
+    min-width: 275px;
+    gap: 8px;
+    border-right: 1px solid var(--border-color);
+}
+
+.school-item .school-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2B2B2B;
+}
+
+.school-item .school-rating {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 5px;
+}
+
+.star-icon {
+    display: flex;
+}
+
+.rating-value {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.school-reviews {
+    font-size: 14px;
+    color: #00A944;
+}
+
+.school-courses {
+    font-size: 14px;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+}
+
+.school-categories-container {
+    display: flex;
+    gap: 10px;
+}
+
+.school-category {
+    background-color: #F5F7FA;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #2B2B2B;
+}
+
+.btn-school-details {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    width: fit-content;
+}
+.filters-close{
+    display: none;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.filters-close::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 18px;
+    background-color: #333;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+}
+
+.filters-close::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 18px;
+    background-color: #333;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transform-origin: center;
+}
+@media screen and (max-width: 1250px) {
+    .school-info{
+        min-width: 0 !important;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .catalog-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .catalog-filters {
+        display: none;
+    }
+    
+    .catalog-filters.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: var(--bg-primary);
+        padding: 20px;
+        overflow-y: auto;
+    }
+    
+    .catalog-filters.active .filters-header {
+        justify-content: space-between;
+        padding: 16px 20px;
+        max-width: 345px;
+        margin: 0 auto;
+        border-bottom: none;
+    }
+    .catalog-filters.active .filters-header h3{
+        font-size: 18px;
+    }
+    .category-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .catalog-filters.active .filters-main {
+        max-width: 345px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    .catalog-filters.active .reset-filters {
+        display: none;
+    }
+    
+    .filters-menu-btn {
+        display: flex;
+    }
+    .filters-close{
+        display: flex;
+    }
+    
+    .filters-menu-btn:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .catalog-sorting {
+        display: none;
+    }
+    .school-info{
+        min-width: 0 !important;
+    }
+    .catalog-courses{
+        min-height: 0 !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .catalog-courses .course-card{
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-flow: dense;
+        padding: 30px !important;
+        gap: 20px;
+    }
+    .catalog-courses .school-name{
+        font-size: 16px !important;
+    }
+    .catalog-courses .course-info, .catalog-courses .course-actions, .catalog-courses .btn-compare{
+        grid-column: span 2 !important;
+    }
+    .catalog-courses .course-actions{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 9px !important;
+        column-gap: 20px !important;
+    }
+    .catalog-courses .course-details{
+        justify-content: start !important;
+    }
+    .catalog-courses .course-features{
+        gap: 8px !important;
+    }
+    .catalog-courses .detail-item{
+        flex-direction: row !important;
+        text-align: left !important;
+    }
+    .category-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .category-links h2, .school-section h2{
+        font-size: 22px;
+    }
+    .school-item, .school-item-content{
+        flex-direction: column;
+    }
+    .school-item{
+        padding: 0 0 30px 0;
+    }
+    .school-item-content{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .school-item .school-info{
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .btn-school-details{
+        width: calc(100% - 60px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .catalog-title{
+        font-size: 26px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    .catalog-description{
+        margin-bottom: 20px;
+    }
+    .catalog-categories{
+        margin-bottom: 24px;
+    }
+}

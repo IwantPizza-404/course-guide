@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агрегатор онлайн-курсов</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/components/tabs.css">
+    <link rel="stylesheet" href="css/components/slider.css">
+    <link rel="stylesheet" href="css/components/courses.css">
+    <link rel="stylesheet" href="css/components/blog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapp">
+                <div class="header-nav">
+                    <div class="logo">
+                        <a href="index.html">Logo</a>
+                    </div>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="course-catalog.html" class="nav_link active">Курсы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Школы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Отзывы о школах</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Акции школ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_link">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <div class="transfer-btn">
+                        <div class="transfer-btn_icon">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_833)">
+                                    <path d="M27.7071 10.2929L20.7069 3.29273C20.3163 2.90225 19.6832 2.90237 19.2927 3.29296C19.1052 3.48047 18.9999 3.73465 18.9999 3.99979V6.99984H11.9997C11.4474 6.99984 10.9997 7.44756 10.9997 7.99988C10.9997 8.55219 11.4474 8.99991 11.9997 8.99991H19.9999C20.5522 8.99991 21 8.55219 21 7.99988V6.41378L25.586 10.9999L21 15.586V13.9999C21 13.4476 20.5522 12.9999 19.9999 12.9999H8.99969V9.99983C8.99957 9.44752 8.55173 8.99991 7.99948 9.00003C7.73439 9.00009 7.48015 9.10538 7.29265 9.29283L0.292568 16.293C-0.0978483 16.6835 -0.0978483 17.3165 0.292568 17.707L7.29271 24.7071C7.48021 24.8947 7.73451 25.0001 7.99971 25.0001C8.13114 25.0005 8.26139 24.9747 8.38269 24.9241C8.75629 24.7692 8.99981 24.4046 8.99969 24.0001V21H15.9998C16.5521 21 16.9999 20.5523 16.9999 20C16.9999 19.4477 16.5521 19 15.9998 19H7.99971C7.4474 19 6.99967 19.4477 6.99967 20V21.5861L2.41358 17L6.99967 12.4139V13.9999C6.99967 14.5522 7.4474 14.9999 7.99971 14.9999H18.9999V18C19 18.5523 19.4478 18.9999 20.0001 18.9998C20.2652 18.9997 20.5194 18.8944 20.7069 18.707L27.7071 11.7069C28.0974 11.3163 28.0974 10.6833 27.7071 10.2929Z" fill="#2B2B2B"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_833">
+                                        <rect width="28" height="28" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="icon-indicator">3</span>
+                        </div>
+                    </div>
+                    <div class="search-input">
+                        <label for="search-field" class="search-input-label">
+                            <div class="search-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_326)">
+                                        <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.8477 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.8477 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.8477 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#B5B5B5"/>
+                                        <path d="M19.7616 18.6122L15.1003 13.951C14.7827 13.6333 14.2683 13.6333 13.9507 13.951C13.6331 14.2683 13.6331 14.7832 13.9507 15.1006L18.6119 19.7618C18.7707 19.9206 18.9786 20 19.1868 20C19.3946 20 19.6027 19.9206 19.7616 19.7618C20.0792 19.4445 20.0792 18.9296 19.7616 18.6122Z" fill="#B5B5B5"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_326">
+                                            <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <input type="text" name="search" id="search-field" class="search_input" placeholder="Искать курсы">
+                        </label>
+                    </div>
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3751)">
+                                <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.8477 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.8477 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.8477 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#2B2B2B"/>
+                                <path d="M19.7615 18.6122L15.1002 13.951C14.7826 13.6333 14.2682 13.6333 13.9506 13.951C13.633 14.2683 13.633 14.7832 13.9506 15.1006L18.6119 19.7618C18.7707 19.9206 18.9786 20 19.1867 20C19.3945 20 19.6027 19.9206 19.7615 19.7618C20.0791 19.4445 20.0791 18.9296 19.7615 18.6122Z" fill="#2B2B2B"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_3751">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                            
+                    </button>
+                    <button class="burger-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2.38411H0V4.37086H20V2.38411Z" fill="#2B2B2B"/>
+                            <path d="M20 15.6291H0V17.6159H20V15.6291Z" fill="#2B2B2B"/>
+                            <path d="M20 9.00662H0V10.9934H20V9.00662Z" fill="#2B2B2B"/>
+                        </svg>                            
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-close"></div>
+        <ul class="mobile-nav-links">
+            <li>
+                <a href="#" class="nav_link active">Курсы</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Школы</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Отзывы о школах</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Акции школ</a>
+            </li>
+            <li>
+                <a href="#" class="nav_link">Блог</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Mobile Menu -->
+    <section class="start-screen">
+        <div class="container">
+            <div class="start-screen_wrapp">
+                <div class="start-screen_content">
+                    <h1 class="start-screen-title">Агрегатор онлайн-курсов</h1>
+                    <p class="start-screen-subtitle">
+                        Сравниваем онлайн-курсы по digital и IT. 
+                        <br>Мы — каталог-отзовик курсов. Выбирайте курсы по отзывам, 
+                        цене, продолжительности и другим критериям!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="features">
+            <div class="container">
+                <div class="features-wrapp">
+                    <h1 class="section-title">Наши преимущества</h1>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-item_header">
+                                <div class="feature-pic">
+                                    <img src="./assets/images/feature-1.svg" alt="feature">
+                                </div>
+                                <h2 class="feature-title">Большой выбор онлайн-курсов</h2>
+                            </div>
+                            <div class="feature-item_content">
+                                <p class="feature-text">
+                                    Мы аккумулируем большое количество
+                                    онлайн-курсов по различным направлениям, 
+                                    позволяя сравнивать их, и выбирать то, 
+                                    что вам нравится
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-item_header">
+                                <div class="feature-pic">
+                                    <img src="./assets/images/feature-2.svg" alt="feature">
+                                </div>
+                                <h2 class="feature-title">Актуальная информация</h2>
+                            </div>
+                            <div class="feature-item_content">
+                                <p class="feature-text">
+                                    Мы регулярно обновляем наши базы данных,  чтобы 
+                                    предоставлять вам только самую свежую информацию
+                                    о новых курсах, старте обучения,  скидках и предложениях 
+                                    от онлайн-школ
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-item_header">
+                                <div class="feature-pic">
+                                    <img src="./assets/images/feature-3.svg" alt="feature">
+                                </div>
+                                <h2 class="feature-title">Скорость поиска</h2>
+                            </div>
+                            <div class="feature-item_content">
+                                <p class="feature-text">
+                                    Агрегатор курсов создан для экономии вашего времени.  
+                                    Вы можете с легкостью найти подходящий курс в нашем каталоге
+                                    по различным фильтрам
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="course-directions">
+            <div class="container">
+                <div class="directions-wrapp">
+                    <h1 class="section-title">Направления курсов</h1>
+                    <div class="tabs-container">
+                    <!-- Tab Navigation -->
+                    <div class="tabs-navigation">
+                        <nav class="tabs-navigation-list">
+                            <button class="tab-button active" data-tab="programming">Программирование</button>
+                            <button class="tab-button" data-tab="marketing">Маркетинг</button>
+                            <button class="tab-button" data-tab="design">Дизайн</button>
+                            <button class="tab-button" data-tab="analytics">Аналитика</button>
+                            <button class="tab-button" data-tab="finance">Финансы</button>
+                            <button class="tab-button" data-tab="management">Управление</button>
+                            <button class="tab-button" data-tab="content">Контент-маркетинг</button>
+                        </nav>
+                    </div>
+                    
+                    <!-- Tab Content -->
+                    <div class="tabs-content">
+                        <!-- Programming Tab (Active by default) -->
+                        <div class="tab-pane active" id="programming">
+                            <div class="courses-grid">
+                                <!-- Course links will be generated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <!-- Marketing Tab -->
+                        <div class="tab-pane" id="marketing">
+                            <div class="courses-grid">
+                                <!-- Course links will be generated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <!-- Design Tab -->
+                        <div class="tab-pane" id="design">
+                            <div class="courses-grid">
+                                <!-- Course links will be generated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <!-- Analytics Tab -->
+                        <div class="tab-pane" id="analytics">
+                            <div class="courses-grid">
+                                <!-- Course links will be generated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <!-- Finance Tab -->
+                        <div class="tab-pane" id="finance">
+                            <div class="courses-grid">
+                                <!-- Course links will be generated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <!-- Management Tab -->
+                        <div class="tab-pane" id="management">
+                            <div class="courses-grid">
+                                <!-- Course links will be generated dynamically -->
+                            </div>
+                        </div>
+                        
+                        <!-- Content Marketing Tab -->
+                        <div class="tab-pane" id="content">
+                            <div class="courses-grid">
+                                <!-- Course links will be generated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="schools" class="schools">
+            <div class="container">
+                <div class="schools-wrapp">
+                    <h2 class="section-title">Школы</h2>
+                    <div class="schools-slider-wrapp">
+                        <div class="swiper schools-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/images/schools/skillfactory.png" alt="Нетология">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/schools/skillfactory.png" alt="SkillFactory">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/schools/skillfactory.png" alt="OTUS">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/schools/skillfactory.png" alt="GeekBrains">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/schools/skillfactory.png" alt="Skillbox">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/schools/skillfactory.png" alt="Яндекс Практикум">
+                                </div>
+                            </div>
+                            <!-- Pagination dots -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- Navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-courses">
+            <div class="container">
+                <div class="popular-courses_wrapp">
+                    <h2 class="section-title">Популярные онлайн-курсы</h2>
+                
+                    <!-- Category buttons will be generated dynamically -->
+                    <div class="course-categories" id="course-categories">
+                        <!-- Categories will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <div class="course-list" id="course-list">
+                        <!-- Course cards will be generated dynamically -->
+                    </div>
+                    
+                    <div class="show-more">
+                        <button class="btn-show-more">Посмотреть еще</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div class="blog-wrapp">
+                    <h2 class="section-title">Блог</h2>
+                    <div class="blog-grid">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <!-- <img src="assets/images/blog/blog-1.jpg" alt="Блог статья"> -->
+                                <div class="blog-category">
+                                    <span>Онлайн курсы по маркетингу</span>
+                                </div>
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">Топ-10 онлайн-курсов по интернет-маркетингу Топ-10 онлайн-курсов по интернет-маркетингу</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-date">1 сентября</span>
+                                    <a href="#" class="blog-more">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <!-- <img src="assets/images/blog/blog-2.jpg" alt="Блог статья"> -->
+                                <div class="blog-category">
+                                    <span>Онлайн курсы по маркетингу</span>
+                                </div>
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">Топ-10 онлайн-курсов по интернет-маркетингу Топ-10 онлайн-курсов по интернет-маркетингу</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-date">1 сентября</span>
+                                    <a href="#" class="blog-more">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <!-- <img src="assets/images/blog/blog-3.jpg" alt="Блог статья"> -->
+                                <div class="blog-category">
+                                    <span>Онлайн курсы по маркетингу</span>
+                                </div>
+                            </div>
+                            <div class="blog-card-content">
+                                <h3 class="blog-card-title">Топ-10 онлайн-курсов по интернет-маркетингу Топ-10 онлайн-курсов по интернет-маркетингу</h3>
+                                <div class="blog-card-meta">
+                                    <span class="blog-date">1 сентября</span>
+                                    <a href="#" class="blog-more">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="/">LOGO</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/vk.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/telegram.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/instagram.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/youtube.svg">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="assets/icons/facebook.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3 class="footer-title">КАТЕГОРИИ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Программирование</a></li>
+                            <li><a href="#">Маркетинг</a></li>
+                            <li><a href="#">Дизайн</a></li>
+                            <li><a href="#">Управление</a></li>
+                            <li><a href="#">Контент-маркетинг</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">ШКОЛЫ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Skillbox</a></li>
+                            <li><a href="#">Geekbrains</a></li>
+                            <li><a href="#">Нетология</a></li>
+                            <li><a href="#">Skillfactory</a></li>
+                            <li><a href="#">Convertmonster</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">ОТЗЫВЫ О ШКОЛАХ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Отзывы о Skillbox</a></li>
+                            <li><a href="#">Отзывы о Geekbrains</a></li>
+                            <li><a href="#">Отзывы о Нетология</a></li>
+                            <li><a href="#">Отзывы о Skillfactory</a></li>
+                            <li><a href="#">Отзывы о Convertmonster</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">КУРСЫ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">С дипломом</a></li>
+                            <li><a href="#">С трудоустройством</a></li>
+                            <li><a href="#">Платные</a></li>
+                            <li><a href="#">Бесплатные</a></li>
+                            <li><a href="#">Ближайшие по дате старта</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">УРОВЕНЬ СЛОЖНОСТИ</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Начальный</a></li>
+                            <li><a href="#">Средний</a></li>
+                            <li><a href="#">Профессиональный</a></li>
+                            <li><a href="#">Для детей</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom_wrapp">
+                    <div class="footer-bottom-col">
+                        <div class="footer-logo">
+                            <a href="/">LOGO</a>
+                        </div>
+                        <div class="footer-copyright">
+                            © 2021. Logo. Все права защищены
+                        </div>
+                    </div>
+                    <div class="footer-bottom-col">
+                        <div class="footer-socials">
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/vk.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/telegram.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/instagram.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/youtube.svg">
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="assets/icons/facebook.svg">
+                            </a>
+                        </div>
+                        <div class="footer-policy">
+                            <a href="#">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/components/tabs.js"></script>
+    <script src="js/components/course-data.js"></script>
+    <script src="js/components/slider.js"></script>
+    <script src="js/components/course-categories.js"></script>
+    <script src="js/components/courses.js"></script>
+</body>
+</html> 

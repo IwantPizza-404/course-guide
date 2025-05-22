@@ -1,0 +1,502 @@
+/* Responsive Design */
+@media screen and (max-width: 1250px) {
+    .container{
+        max-width: 1080px;
+    }
+    .catalog-courses .course-card .detail-item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .catalog-courses .course-card{
+        padding: 20px !important;
+        grid-template-columns: 1.5fr 0.8fr 1fr 0.6fr 1fr 1.65fr !important;
+    }
+    .catalog-courses .course-card .feature-item{
+        gap: 12px !important;
+    }
+    .catalog-courses .monthly-price, .old-price{
+        font-size: 12px !important;
+    }
+    .catalog-sorting .sort-item{
+        font-size: 12px !important;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .container{
+        max-width: 768px;
+        padding: 0 16px;
+    }
+    .search-btn{
+        display: flex;
+    }
+    .search-input{
+        position: absolute;
+        background: var(--bg-primary);
+        top: 100%;
+        right: 0;
+        border: 1px solid var(--border-color);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .start-screen_wrapp{
+        min-height: 369px;
+    }
+    .start-screen::after{
+        height: 100%;
+        top: 34px;
+        right: -86px;
+    }
+    .header-nav{
+        gap: 56px;
+    }
+    .nav-links{
+        gap: 28px;
+    }
+    .start-screen-title{
+        max-width: 320px;
+    }
+    .start-screen-subtitle{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .start-screen_content{
+        gap: 16px;
+        max-width: 352px;
+    }
+    .features-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+    .features-wrapp{
+        gap: 50px;
+    }
+    .tabs-container{
+        flex-direction: column;
+        gap: 30px;
+        background: none !important;
+    }
+    .tabs-navigation-list{
+        flex-direction: row !important;
+        width: 100%;
+        overflow-x: auto;
+        gap: 10px;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+    .tabs-content{
+        background: var(--bg-primary) !important;
+    }
+    .tab-button{
+        padding: 12px 24px;
+        font-family: var(--font-primary);
+        background: none;
+        color: var(--text-color);
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 25px;
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+    }
+    .tab-button:hover{
+        background: var(--bg-secondary);
+    }
+    .tab-button.active{
+        background: var(--primary-color) !important;
+        color: #fff;
+    }
+    .courses-grid{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .schools-slider .swiper-slide{
+        height: 272px !important;
+    }
+    .popular-courses_wrapp{
+        gap: 20px !important;
+    }
+    .show-more{
+        padding-top: 10px;
+    }
+    .course-card{
+        padding: 20px !important;
+        grid-template-columns: 1.5fr 0.8fr 1fr 0.6fr 1fr 1.65fr !important;
+    }
+    .course-card .feature-item{
+        gap: 12px !important;
+    }
+    .detail-item{
+        text-align: center;
+        flex-direction: column;
+    }
+    .monthly-price, .old-price{
+        font-size: 12px !important;
+    }
+    .blog-wrapp{
+        gap: 30px !important;
+    }
+    .blog-grid{
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
+    }
+    .blog-card-title{
+        font-size: 16px !important;
+    }
+    .footer-columns{
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .footer-bottom .footer-socials, .footer-bottom .footer-logo{
+        display: none;
+    }
+    .footer-top{
+        display: flex;
+    }
+    .social-link > img{
+        aspect-ratio: 1;
+        width: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0 15px;
+        max-width: 600px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .burger-btn{
+        display: flex;
+    }
+    /* Mobile Menu Styles */
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 85%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: var(--bg-primary);
+        z-index: 1000;
+        padding: 60px 20px 20px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+    }
+    .mobile-menu.active {
+        display: block;
+        right: 0;
+    }
+    .mobile-menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    .mobile-menu-close::before,
+    .mobile-menu-close::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+    .mobile-menu-close::before {
+        transform: rotate(45deg);
+    }
+    .mobile-menu-close::after {
+        transform: rotate(-45deg);
+    }
+    .mobile-nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 30px;
+    }
+    .mobile-nav-links li {
+        margin-bottom: 20px;
+    }
+    .mobile-nav-links .nav_link {
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+        padding: 8px 0;
+    }
+    .mobile-menu-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+    }
+    .mobile-menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    /* End Mobile Menu Styles */
+    
+    .start-screen-title{
+        font-size: 30px;
+        max-width: 280px;
+    }
+    .start-screen::after{
+        height: 300px;
+        top: unset;
+        bottom: 0;
+    }
+    .features-grid{
+        grid-template-columns: 1fr;
+    }
+    .feature-title{
+        max-width: 100%;
+    }
+    .feature-item_header{
+        align-items: center;
+    }
+    .course-card{
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-auto-flow: dense;
+        padding: 30px !important;
+    }
+    .course-info, .course-actions{
+        grid-column: span 2 !important;
+    }
+    .course-actions{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 9px !important;
+        column-gap: 20px !important;
+    }
+    .course-details{
+        justify-content: start !important;
+    }
+    .course-features{
+        gap: 8px !important;
+    }
+    .detail-item{
+        flex-direction: row;
+        text-align: left;
+    }
+    .blog-grid{
+        grid-template-columns: 1fr !important;
+    }
+    .footer-columns{
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .start-screen_wrapp{
+        min-height: 425px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 45px;
+    }
+    .start-screen_content, .start-screen-title{
+        max-width: 100%;
+    }
+    .start-screen-subtitle{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .start-screen-title{
+        font-size: 26px;
+    }
+    .start-screen::after{
+        height: 265px;
+        top: unset;
+        bottom: 0;
+        right: 0;
+    }
+    .features{
+        padding: 40px 0;
+    }
+    .features-grid{
+        gap: 30px;
+    }
+    .feature-item, .feature-item_header{
+        gap: 15px;
+    }
+    .features-wrapp{
+        gap: 31px;
+    }
+    .feature-pic > img{
+        height: 32px;
+    }
+    .feature-text{
+        line-height: 22px;
+    }
+
+    .course-directions{
+        padding: 40px 0 60px;
+    }
+    .courses-grid{
+        grid-template-columns: 1fr !important;
+    }
+    .directions-wrapp{
+        gap: 30px;
+    }
+    .tabs-navigation{
+        position: relative;
+        width: 100%;
+        background: var(--bg-primary);
+        border: 1px solid var(--text-color);
+        border-radius: 25px;
+        padding: 12px 30px;
+        height: 50px;
+        align-items: center;
+        cursor: pointer;
+    }
+    .tabs-navigation::after{
+        content: attr(data-active-tab);
+        font-weight: 700;
+        font-size: 14px;
+        pointer-events: none;
+    }
+    .tabs-navigation-list{
+        position: absolute;
+        flex-direction: column !important;
+        justify-content: flex-start;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-primary);
+        border-radius: 12px;
+        margin-top: 5px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 20;
+        overflow: hidden;
+    }
+    .tabs-navigation::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%) rotate(45deg);
+        border-right: 2px solid var(--text-color);
+        border-bottom: 2px solid var(--text-color);
+        transition: transform 0.3s ease;
+        pointer-events: none;
+    }
+    .tabs-navigation.dropdown-active::before {
+        transform: translateY(-25%) rotate(-135deg);
+    }
+    .tabs-navigation .tab-button {
+        display: none;
+    }
+    .tabs-navigation.dropdown-active .tabs-navigation-list{
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        padding: 8px 0;
+    }
+    .tabs-navigation.dropdown-active .tab-button {
+        display: block;
+        padding: 12px 16px;
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+    }
+    .tabs-navigation.dropdown-active .tab-button.active {
+        background-color: var(--bg-secondary) !important;
+        color: var(--text-color);
+    }
+    .tabs-navigation.dropdown-active .tab-button:hover {
+        background-color: var(--bg-secondary);
+    }
+    .schools-slider .swiper-slide{
+        height: 220px !important;
+    }
+    .schools-slider{
+        padding: 30px !important;
+    }
+    .schools-slider-wrapp .swiper-button-prev{
+        left: 0px !important;
+    }
+    .schools-slider-wrapp .swiper-button-next{
+        right: 0px !important;
+    }
+    .schools-slider-wrapp .swiper-button-prev::after, .schools-slider-wrapp .swiper-button-next::after{
+        font-size: 14px !important;
+    }
+    .popular-courses_wrapp{
+        gap: 30px !important;
+    }
+}
+@media screen and (max-width: 435px){
+    .start-screen_wrapp{
+        padding-top: 25px !important;
+    }
+    .footer-top{
+        padding-top: 44px;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer-logo > a{
+        font-size: 24px;
+    }
+    .footer-content{
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+    .footer-columns{
+        grid-template-columns: 1fr !important;
+        gap: 0;
+    }
+    .footer-title{
+        position: relative;
+        padding: 12px 0;
+        margin: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-title::after{
+        content: '+';
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .footer-column.active .footer-title::after{
+        content: '–';
+    }
+    .footer-links{
+        position: absolute;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-column.active .footer-links{
+        position: static;
+        opacity: 1;
+        max-height: 500px;
+        padding-bottom: 20px;
+    }
+    .footer-links li{
+        margin-bottom: 12px;
+    }
+    .footer-links li:last-child{
+        margin-bottom: 0;
+    }
+    .footer-bottom_wrapp{
+        flex-direction: column-reverse !important;
+        align-items: center;
+        gap: 6px !important;
+    }
+}
